@@ -14,6 +14,7 @@ import kd.sdk.plugin.Plugin;
 public class StudyOpenApiPlugin extends AbstractBillWebApiPlugin implements Plugin {
     @ApiPostMapping("/save")
     public CustomApiResult<String> saveBill(@ApiParam("单据编号") String billno,@ApiParam("描述") String desc){
+        System.out.println("测试git提交");
         return CustomApiResult.success("保存成功");
     }
 }
