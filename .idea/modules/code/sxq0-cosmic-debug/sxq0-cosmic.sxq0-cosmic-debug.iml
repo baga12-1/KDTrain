@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationInvariantToken" value="PGFwcGxpY2F0aW9uIGdlbmVyYXRlZC1ieT0iaW50ZWxsaWoiPjxpZD5zeHEwLWNvc21pYy5zeHEwLWNvc21pYy1kZWJ1Zy5tYWluPC9pZD48Y2xhc3NwYXRoPjxkaXIgbmFtZT0iRDovc29mdHdhcmUva2luZ2RlZS9wcm9qZWN0L25ld0VtcGxveWVlVHJhaW4vY29kZS9zeHEwLWNvc21pYy1kZWJ1Zy9idWlsZC9yZXNvdXJjZXMvbWFpbiI+PC9kaXI+PGRpciBuYW1lPSJEOi9zb2Z0d2FyZS9raW5nZGVlL3Byb2plY3QvbmV3RW1wbG95ZWVUcmFpbi9jb2RlL3N4cTAtY29zbWljLWRlYnVnL2J1aWxkL2NsYXNzZXMvamF2YS9tYWluIj48L2Rpcj48L2NsYXNzcGF0aD48L2FwcGxpY2F0aW9uPg==" />
+          </map>
+        </option>
+        <option name="version" value="5" />
+      </configuration>
+    </facet>
+  </component>
+</module>

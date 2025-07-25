@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxq0-cosmic.iml" filepath="$PROJECT_DIR$/.idea/modules/sxq0-cosmic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/code/sxq0-cosmic-debug/sxq0-cosmic.sxq0-cosmic-debug.iml" filepath="$PROJECT_DIR$/.idea/modules/code/sxq0-cosmic-debug/sxq0-cosmic.sxq0-cosmic-debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/code/base/sxq0-train-base-common/sxq0-cosmic.sxq0-train-base-common.iml" filepath="$PROJECT_DIR$/.idea/modules/code/base/sxq0-train-base-common/sxq0-cosmic.sxq0-train-base-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/code/base/sxq0-train-base-helper/sxq0-cosmic.sxq0-train-base-helper.iml" filepath="$PROJECT_DIR$/.idea/modules/code/base/sxq0-train-base-helper/sxq0-cosmic.sxq0-train-base-helper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/code/sxq0/sxq0-train-sxq0/sxq0-cosmic.sxq0-train-sxq0.iml" filepath="$PROJECT_DIR$/.idea/modules/code/sxq0/sxq0-train-sxq0/sxq0-cosmic.sxq0-train-sxq0.iml" />
+    </modules>
+  </component>
+</project>

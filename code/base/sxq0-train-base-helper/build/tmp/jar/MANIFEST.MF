@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Jar-Id: 
+Project-Name: sxq0-train-base-helper
+Build-Tool: Gradle 8.7
+Build-Date: 2025-07-25 08:31:59
+Built-By: Kingdee Cosmic Developer Tools
+Build-Num: 20250725083159320
+App-Name: 
+Git-Branch: 
+Cloud-Name: 
+Group-Name: sxq0.cosmic
+Bundle-Version: 1.0.0
+Git-Commit-Hash: 
+Build-Image: 
+Build-Jdk: 1.8.0_361
+
