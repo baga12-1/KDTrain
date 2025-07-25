@@ -15,6 +15,7 @@ public class StudyOpenApiPlugin extends AbstractBillWebApiPlugin implements Plug
     @ApiPostMapping("/save")
     public CustomApiResult<String> saveBill(@ApiParam("单据编号") String billno,@ApiParam("描述") String desc){
         System.out.println("测试git提交");
+         System.out.println("测试idea拉取");
         return CustomApiResult.success("保存成功");
     }
 }
