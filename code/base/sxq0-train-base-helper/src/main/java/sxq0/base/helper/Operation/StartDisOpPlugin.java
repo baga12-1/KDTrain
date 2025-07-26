@@ -94,7 +94,7 @@ public class StartDisOpPlugin extends AbstractOperationServicePlugIn implements 
             throw new KDBizException("消毒记录单保存失败");
         }
         List<Object> successPkIds = recordResult.getSuccessPkIds();
-        //TODO: 申请单附件面板赋值到记录单附件面板
+        //申请单附件面板赋值到记录单附件面板
         attachmentData = AttachmentServiceHelper.getAttachments("sxq0_personnel_apply", applyDoc.getLong("id"), "attachmentpanel");
         attachmentData.forEach(attach -> {
             try {

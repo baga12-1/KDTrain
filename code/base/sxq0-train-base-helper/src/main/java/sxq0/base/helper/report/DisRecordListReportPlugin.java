@@ -53,6 +53,8 @@ public class DisRecordListReportPlugin extends AbstractReportListDataPlugin{
 
             DataSet groupDataSet = dataSet.copy().groupBy(new String[]{"sxq0_applyenterworkshop", "substr(sxq0_appenterdate,0,7) as applydate"})
                     .count().finish();
+
+            //构造结果数据
             Collection<Object[]> coll = new ArrayList<>();
             RowMeta rowMeta = RowMetaFactory.createRowMeta(field, dataTypes);
             CollectionInput inputs = new CollectionInput(rowMeta, coll);
@@ -110,7 +112,7 @@ public class DisRecordListReportPlugin extends AbstractReportListDataPlugin{
                 }
             }
 
-//        计算年总申请数量
+            //计算年总申请数量
             DataSet yearTotalDataSet = dataSet.copy()
                     .groupBy(new String[]{field[0], "substr(sxq0_appenterdate,0, 4) as applydate"})
                     .count(field[13]).finish();
@@ -119,6 +121,7 @@ public class DisRecordListReportPlugin extends AbstractReportListDataPlugin{
                     , new String[]{field[13]}
             ).finish();
             DataSet totalDataSetCopy = resultDataSet.copy();
+            //构建合计行
             GroupbyDataSet totalGroupDataSet = totalDataSetCopy.groupBy(null);
             totalGroupDataSet.max("sxq0_applyenterworkshop", "sxq0_applyenterworkshop_total")
                     .sum(field[1], field[1] + "_total")
@@ -149,6 +152,7 @@ public class DisRecordListReportPlugin extends AbstractReportListDataPlugin{
                     , field[11] + "_total"
                     , field[12] + "_total"
                     , field[13] + "_total"});
+            //判断是否当月没有完成消毒人数
             for (Row row : totalDataSet.copy()) {
                 for (int i = 1; i < field.length - 1; i++) {
                     Long totalQty = row.getLong(i);

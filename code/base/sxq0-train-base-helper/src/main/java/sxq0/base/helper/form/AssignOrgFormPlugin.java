@@ -38,7 +38,7 @@ public class AssignOrgFormPlugin extends AbstractFormPlugin implements Plugin {
     @Override
     public void registerListener(EventObject e) {
         super.registerListener(e);
-        // 注册按钮点击监听（注意itemClick和click的区别）
+        // 注册按钮点击监听
         Button button = this.getControl("btnok");
         button.addClickListener(this);
 

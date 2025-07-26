@@ -56,12 +56,14 @@ public class DisinfectProtocolPlugin extends AbstractBasePlugIn implements Plugi
     @Override
     public void afterCreateNewData(EventObject e) {
         //创建默认三行数据
-        int[] newEntryRow = this.getModel().batchCreateNewEntryRow(ENTRYENTITY, 3);
+        DynamicObjectCollection query = QueryServiceHelper.query("sxq0_disinfection_level"
+                , "id", new QFilter("number", QCP.not_equals, null).toArray());
+        int[] newEntryRow = this.getModel().batchCreateNewEntryRow(ENTRYENTITY, query.size());
         String findField = "number,name,status,creator,enable,masterid";
         //查找消毒等级数据
         DynamicObject[] levels = BusinessDataServiceHelper.load(LEVEL, findField, null);
         //赋值给新增的单据体
-        for(int i = 0 ; i < 3;i++){
+        for(int i = 0 ; i < query.size();i++){
             this.getModel().setValue(ENTRYLEVEL,levels[i].getPkValue(),i);
         }
         this.getView().updateView(ENTRYENTITY);
