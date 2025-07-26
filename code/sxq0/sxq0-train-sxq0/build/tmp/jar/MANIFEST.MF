@@ -2,15 +2,15 @@ Manifest-Version: 1.0
 Jar-Id: 
 Project-Name: sxq0-train-sxq0
 Build-Tool: Gradle 8.7
-Build-Date: 2025-07-25 08:31:59
+Build-Date: 2025-07-26 08:56:53
 Built-By: Kingdee Cosmic Developer Tools
-Build-Num: 20250725083159764
+Build-Num: 20250726085653629
 App-Name: 
-Git-Branch: 
+Git-Branch: master
 Cloud-Name: 
 Group-Name: sxq0.cosmic
 Bundle-Version: 1.0.0
-Git-Commit-Hash: 
+Git-Commit-Hash: 3a541014394742e5ac4ccfa0dfa4504949902379
 Build-Image: 
 Build-Jdk: 1.8.0_361
 

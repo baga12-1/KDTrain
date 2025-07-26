@@ -35,7 +35,7 @@ public class ExpireTask extends AbstractTask implements Plugin {
     public void execute(RequestContext requestContext, Map<String, Object> map) throws KDException {
         //审批通过的人员申请单，如果过了申请进入时间的第二天零点还没开始消毒，则单据自动关闭（状态为废弃），
         // 且发送消息（消息中心通知和邮件）提示员工消毒申请已过期。
-        //每天都是凌晨开始，所以获取当前时间前一天的日期
+
         LocalDate now = LocalDate.now();
         //找出审核但前一天还没开始消毒的单据
         QFilter f1 = new QFilter("billstatus", QCP.equals, "C");
